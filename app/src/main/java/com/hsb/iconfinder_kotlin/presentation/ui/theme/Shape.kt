@@ -1,4 +1,4 @@
-package com.hsb.iconfinder_kotlin.ui.theme
+package com.hsb.iconfinder_kotlin.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
