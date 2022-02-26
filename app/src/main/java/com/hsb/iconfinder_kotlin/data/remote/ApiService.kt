@@ -8,5 +8,5 @@ interface ApiService  {
 
    // ?query=arrow&count=10
     @POST("?")
-    suspend fun getSearchIcon(@Query("query") query: String,@Query("count") count: String) : IconFinder
+    suspend fun getSearchIcon(@Query("query") query: String,@Query("count") count: Int) : IconFinder
 }

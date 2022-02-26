@@ -28,9 +28,8 @@ object ApiModule {
             addInterceptor(
                 Interceptor { chain ->
                     val builder = chain.request().newBuilder()
-                    builder.header("X-App-Version", "1.23")
-                    builder.header("X-Platform", "Android")
-                    builder.header("X-Auth-Token", "sgsrager32524542afg3423")
+                    builder.header("Accept", "application/json")
+                    builder.header("Authorization", "Bearer X0vjEUN6KRlxbp2DoUkyHeM0VOmxY91rA6BbU5j3Xu6wDodwS0McmilLPBWDUcJ1")
                     return@Interceptor chain.proceed(builder.build())
                 }
             )
@@ -44,21 +43,5 @@ object ApiModule {
             .build()
             .create(ApiService::class.java)
 
-
-
-
-        val client = OkHttpClient()
-
-        val request: Request = Builder()
-            .url("")
-            .get()
-            .addHeader("Accept", "application/json")
-            .addHeader(
-                "Authorization",
-                "Bearer X0vjEUN6KRlxbp2DoUkyHeM0VOmxY91rA6BbU5j3Xu6wDodwS0McmilLPBWDUcJ1"
-            )
-            .build()
-
-        val response: Response = client.newCall(request).execute()
     }
 }

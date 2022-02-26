@@ -4,5 +4,7 @@ import com.hsb.iconfinder_kotlin.domain.model.IconFinder
 
 interface SearchIconRepo {
 
-    fun getSearchIcon() : IconFinder
+    suspend fun getSearchIcon(query: String,count: Int) : IconFinder
+    suspend fun getSearchIcon(query: String) : IconFinder
+
 }
