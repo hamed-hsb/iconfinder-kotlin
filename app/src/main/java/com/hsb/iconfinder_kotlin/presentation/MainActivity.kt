@@ -58,7 +58,8 @@ fun DefaultPreview() {
 
 
 
-@Composable
+
+/*
 fun TextFieldSearch(
 ) {
     var query: String by rememberSaveable { mutableStateOf("") }
@@ -81,7 +82,9 @@ fun TextFieldSearch(
         },
         trailingIcon = {
             if(showClearIcon){
-                IconButton(onClick = { /*TODO*/ }) {
+                IconButton(onClick = { */
+/*TODO*//*
+ }) {
                     Icon(imageVector = Icons.Rounded.Clear,
                         tint = MaterialTheme.colors.onBackground,
                         contentDescription = "Clear icon",
@@ -95,4 +98,4 @@ fun TextFieldSearch(
             .fillMaxWidth()
             .background(color = MaterialTheme.colors.background, shape = RectangleShape)
     )
-}
+}*/
